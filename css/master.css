@@ -237,7 +237,6 @@ em {                       /* for search parameters matched in "text search resu
 }
 .glogo-char-upper {
   font-size: 34px;
-  font-weight: bold;
   display: block;
   padding-bottom: 5px;
 }
@@ -246,13 +245,13 @@ em {                       /* for search parameters matched in "text search resu
   padding: 5px 0;
 }
 .glogo-blue {
-  color: rgb(46, 135, 218);
+  color: rgb(28, 141, 235);
 }
 .glogo-red {
-  color: rgb(246, 49, 49);
+  color: rgb(255, 78, 78);
 }
 .glogo-green {
-  color: rgb(39, 134, 0);
+  color: rgb(46, 158, 0);
 }
 .glogo-yellow {
   color: rgb(244, 190, 0);
