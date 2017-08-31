@@ -24,6 +24,9 @@ em {                       /* for search parameters matched in "text search resu
 .grey-text {
   color: rgb(120, 120, 120);
 }
+.grey-text-light {
+  color: rgb(150, 150, 150);
+}
 .black-text {
   color: rgb(0, 0, 0);
 }
@@ -79,7 +82,7 @@ em {                       /* for search parameters matched in "text search resu
   padding: 4px;
   font-size: 16px;
   width: 536px;
-  /*border: 0;*/
+  border: 0;
   vertical-align: middle;
 }
 .header-user-icon-container {
@@ -115,7 +118,6 @@ em {                       /* for search parameters matched in "text search resu
   display: inline-block;
 }
 .nav-link {
-  text-decoration-line: none;
   padding: 0 8px;
   margin: 0 7px;
 }
@@ -168,7 +170,7 @@ em {                       /* for search parameters matched in "text search resu
  */
 
  .result-text-container {
-   padding: 5px 0 25px 160px;
+   padding: 5px 0 25px 165px;
    width: 600px;
  }
  .result-text {       /* container for each text search result */
@@ -197,7 +199,7 @@ em {                       /* for search parameters matched in "text search resu
  */
 
 .related-searches-container {
-  padding: 0 0 30px 160px;
+  padding: 0 0 25px 165px;
 
 }
 .related-searches-block {     /* left and right containers*/
@@ -220,11 +222,73 @@ em {                       /* for search parameters matched in "text search resu
  *  Google Logo Page Link
  */
 
-dd
+
+.glogo-link-container {
+  padding-left: 310px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgb(210, 210, 210);
+  margin-bottom: 25px
+}
+.glogo-link {
+  display: inline-block;
+  height: 100%;
+  vertical-align: top;
+  text-align: center;
+}
+.glogo-char-upper {
+  font-size: 34px;
+  font-weight: bold;
+  display: block;
+  padding-bottom: 5px;
+}
+.glogo-char-lower {
+  display: block;
+  padding: 5px 0;
+}
+.glogo-blue {
+  color: rgb(46, 135, 218);
+}
+.glogo-red {
+  color: rgb(246, 49, 49);
+}
+.glogo-green {
+  color: rgb(39, 134, 0);
+}
+.glogo-yellow {
+  color: rgb(244, 190, 0);
+}
+.glogo-color-current {
+  color: rgb(0, 0, 0);
+}
+.g-floatleft {            /* hack for spacing last chars in logo-links */
+  float: left;
+}
+.g-floaright {            /* hack for spacing last chars in logo-links */
+  float: right;
+}
+.g-last-upper {           /* hack for spacing last chars in logo-links */
+  margin: 0 5px 0 15px
+}
+.g-last-lower {           /* hack for spacing last chars in logo-links */
+  text-align: right;
+}
 
 
 /*
  *  Footer
  */
+.footer-main {
+  padding: 0 0 20px 150px;
+}
+.location-container {
+  padding: 0 0 15px 15px;
+}
+.location-orb {
+  background-color: rgb(150, 150, 150);
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  margin-right: 4px;
+  float: left;
 
-something
+}
