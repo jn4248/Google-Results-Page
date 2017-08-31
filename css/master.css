@@ -1,0 +1,193 @@
+
+* {
+  border: 1px solid rgba(0,153,0,0.3);
+}
+
+html, body {
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+  min-width: 1000px;
+}
+
+
+/*
+ *  main header
+ */
+
+.grey-shadowed-border {
+  border: 1px solid rgb(120, 120, 120);
+  box-shadow: 0px 1px 2px rgb(120, 120, 120);
+}
+
+.header-main {
+  padding: 20px 0 20px;
+}
+.header-link {
+    text-decoration-line: none;
+    display: inline-block;
+    vertical-align: middle;
+}
+.header-link-logo {             /*extends .header-link */
+  position: absolute;
+  }
+.header-link-icon-searchbox {   /*extends .header-link */
+  margin-left: 3px;
+}
+.header-link-icon-user {        /*extends .header-link */
+  margin-right: 15px;
+}
+
+.header-icon {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+.header-google-logo {
+  vertical-align: middle;
+}
+.header-search-container {
+  display: inline-block;
+  width: 600px;
+  height: 28px;         /* must match line-height */
+  line-height: 28px;    /* controls vertical-align of imput and search icons */
+  padding: 3px;
+  margin-left: 130px;
+  /*border: 1px solid rgb(120, 120, 120);
+  box-shadow: 1px 1px 1px rgb(120, 120, 120);*/
+}
+.header-search-input {
+  display: inline-block;
+  padding: 4px;
+  font-size: 14px;
+  width: 536px;
+  /*border: 0;*/
+  vertical-align: middle;
+}
+.header-user-icon-container {
+  display: inline-block;
+  text-align: center;
+  float: right;
+}
+.header-user-icon {
+  background-color: purple;
+  border-radius: 15px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  font-family: Arial, sans-serif;
+  font-size: 22px;
+  color: white;
+  vertical-align: middle;
+}
+
+
+/*
+ *  Nav  (alternate searches and settings/tools)
+ */
+
+ .nav-container {
+   padding-bottom: 20px;
+ }
+.nav-alt-searches {
+  margin-left: 130px;
+  display: inline-block;
+}
+.nav-utilities {
+  margin-left: 100px;
+  display: inline-block;
+}
+.nav-link {
+  text-decoration-line: none;
+  font-size: 12px;
+  color: rgb(120, 120, 120);
+  padding: 0 5px;
+  margin: 0 5px;
+}
+
+
+/*
+ *  Search Summary
+ */
+
+.search-summary-container {
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(120, 120, 120);
+  padding: 5px 0 5px 130px;
+}
+.search-summary-link {
+  text-decoration-line: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(120, 120, 120);
+}
+.search-summary-dark-font {
+  color: rgb(0, 0, 0);
+}
+
+
+ /*
+  *  Image Results
+  */
+
+.results-pics-container {
+  padding: 5px 0 30px 130px;
+  border-bottom: 1px solid rgb(120, 120, 120);
+}
+.result-pic-link {
+  text-decoration-line: none;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 4px;
+
+}
+.result-pic-frame {
+  width: 120px;
+  height: 160px;           /*Controls height of entire link nav bar*/
+  /*border: 1px solid rgb(120, 120, 120);
+  box-shadow: 1px 1px 1px rgb(120, 120, 120);*/
+
+}
+.result-pic-image {
+  height: 120px;
+  width: 120px;
+  display: block;
+}
+.result-pic-title {
+  color: rgb(0, 0, 0);
+  font-size: 12px;
+  padding: 5px 15px;
+}
+
+
+/*
+ *  Text Results
+ */
+
+ .results-text-container {
+   padding: 5px 0 30px 130px;
+   width: 600px;
+ }
+ .result-text {               /* element type: Section*/
+   width: 100%;
+   margin-bottom: 20px;
+ }
+ .result-text-link {
+   text-decoration-line: none;
+   display: block;
+ }
+ .result-text-title {
+   font-size: 14px;
+   color: rgb(55, 13, 222);
+   /*padding-bottom: 10px*/
+ }
+.result-text-url {
+  color: rgb(0, 145, 32);
+  /*padding-bottom: 10px*/
+}
+.result-text-intro {
+  /*padding-bottom: 10px*/
+}
+.result-text-match-markup {
+  font-weight: bold;
+}
