@@ -5,16 +5,17 @@
     <title>Google Results - Best Ski Resorts in US</title>
     <link href="css/reset.css" rel="stylesheet" type="text/css">
     <link href="css/master.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" type="text/css" rel="stylesheet" >
   </head>
   <body>
 
     <!-- Header Section -->
     <header class="header-main">
         <a class="header-link header-link-logo" href="#">
-          <img class="header-google-logo" src="images/google-logo-results-small.png" alt="google logo link" style="width:112px;height:40px">  <!--was 120x44-->
+          <img class="header-google-logo" src="images/google-logo-results-small.png" alt="google logo link" style="width:120px;height:42px">  <!--was 120x44-->
         </a>
 
-      <div class="header-search-container grey-shadowed-border">
+      <div class="header-search-container shadow-border">
         <input class="header-search-input" type="search" type="search" name="search-query" value="Best Ski Resorts in US">
         <a class="header-link header-link-icon-searchbox" href="#">
           <img class="header-icon" src="images/icon-mic.png" alt="search by voice command">
@@ -39,94 +40,114 @@
      <!-- Nav bars: alternate search styles, and settings/tools  -->
     <div class="nav-container">
       <nav class="nav-alt-searches">
-        <a class="nav-link" href="#">All</a>
-        <a class="nav-link" href="#">Maps</a>
-        <a class="nav-link" href="#">News</a>
-        <a class="nav-link" href="#">Images</a>
-        <a class="nav-link" href="#">Videos</a>
-        <a class="nav-link" href="#">More</a>
+        <a class="nav-link grey-text" href="#">All</a>
+        <a class="nav-link grey-text" href="#">Maps</a>
+        <a class="nav-link grey-text" href="#">News</a>
+        <a class="nav-link grey-text" href="#">Images</a>
+        <a class="nav-link grey-text" href="#">Videos</a>
+        <a class="nav-link grey-text" href="#">More</a>
       </nav>
       <nav class="nav-utilities">
-        <a class="nav-link" href="#">Settings</a>
-        <a class="nav-link" href="#">Tools</a>
+        <a class="nav-link grey-text" href="#">Settings</a>
+        <a class="nav-link grey-text" href="#">Tools</a>
       </nav>
     </div>
 
-    <!-- Search Summary and Suggested Picture "pic" Links -->
+    <!-- Search Summary -->
     <div class="search-summary-container">
-      <a class="search-summary-link search-summary-text" href="#">Ski Areas</a><span class="search-summary-text"> &gt; </span><span class="search-summary-text black-text">United States</span>
+      <a class="search-summary-text grey-text" href="#">Ski Areas</a>
+      <span class="search-summary-text grey-text"> &gt; </span>
+      <span class="search-summary-text black-text">United States</span>
     </div>
 
+    <!-- Image-based Search Results (suggested by browser) -->
     <div class="results-pics-container">
       <a class="result-pic-link" href="#">
-        <div class="result-pic-frame grey-shadowed-border">
+        <div class="result-pic-frame shadow-border">
           <img class="result-pic-image" src="images/result1-deervalley.jpg" alt="Deer Valley Ski Resort">
-          <p class="result-pic-title">Deer Valley</p>
+          <p class="result-pic-title black-text">Deer Valley</p>
         </div>
       </a>
       <a class="result-pic-link" href="#">
-        <div class="result-pic-frame grey-shadowed-border">
+        <div class="result-pic-frame shadow-border">
           <img class="result-pic-image" src="images/result2-aspenmountain.jpg" alt="Aspen Mountain">
-          <p class="result-pic-title"> Aspen Mountain</p>
+          <p class="result-pic-title black-text"> Aspen Mountain</p>
         </div>
       </a>
       <a class="result-pic-link" href="#">
-        <div class="result-pic-frame grey-shadowed-border">
+        <div class="result-pic-frame shadow-border">
           <img class="result-pic-image" src="images/result3-heavenlymountainresort.jpg" alt="Heavenly Mountain Resort">
-          <p class="result-pic-title">Heavenly Mountain Resort</p>
+          <p class="result-pic-title black-text">Heavenly Mountain Resort</p>
         </div>
       </a>
       <a class="result-pic-link" href="#">
-        <div class="result-pic-frame grey-shadowed-border">
+        <div class="result-pic-frame shadow-border">
           <img class="result-pic-image" src="images/result4-jacksonholemountainresort.jpg" alt="Jackson Hole Mountain Resort">
-          <p class="result-pic-title">Jackson Hole Mountain Resort</p>
+          <p class="result-pic-title black-text">Jackson Hole Mountain Resort</p>
         </div>
       </a>
       <a class="result-pic-link" href="#">
-        <div class="result-pic-frame grey-shadowed-border">
+        <div class="result-pic-frame shadow-border">
           <img class="result-pic-image" src="images/result5-parkcitymountainresort.jpg" alt="Park City Mountain Resort">
-          <p class="result-pic-title">Park City Mountain Resort</p>
+          <p class="result-pic-title black-text">Park City Mountain Resort</p>
         </div>
       </a>
       <a class="result-pic-link" href="#">
-        <div class="result-pic-frame grey-shadowed-border">
+        <div class="result-pic-frame shadow-border">
           <img class="result-pic-image" src="images/result6-coppermountain.jpg" alt="Copper Mountain">
-          <p class="result-pic-title">Copper Mountain</p>
+          <p class="result-pic-title black-text">Copper Mountain</p>
         </div>
       </a>
     </div>
 
 
-
-      <div class="results-text-container">
+      <!-- Text-based search results -->
+      <div class="result-text-container">
         <div class="result-text">
-          <a class="result-text-link "href="#">
-            <h3 class="result-text-title">The Top 10 Ski Resorts In North America For 2017 - Forbes</h3>
+          <a class="result-text-link bluelink-text"href="#">
+            The Top 10 Ski Resorts In North America For 2017 - Forbes
           </a>
-          <cite class="result-text-url">https://www.forbes.com/.../christophersteiner/.../the-top-10-ski-resorts-in-north-americ...</cite>
-          <p class="result-text-intro">Nov 17, 2016 - The exercise of picking a <span class="word-match">ski</span> resort, of where to spend a <span class="word-match">ski</span> trip, offers travelers a ... for a complete ranking of the 220 best <span class="word-match">ski resorts</span> in North America. ... The difference, rather conveniently for all of us, is that PAF is a dynamic ...</p>
+          <cite class="result-text-url">https://www.forbes.com/...  ----Text at left has underline link - this does not ----</cite>
+          <p class="result-text-desc">Nov 17, 2016 - The exercise of picking a <span class="word-match">ski</span> resort, of where to spend a <span class="word-match">ski</span> trip, offers travelers a ... for a complete ranking of the 220 best <span class="word-match">ski resorts</span> in North America. ... The difference, rather conveniently for all of us, is that PAF is a dynamic ...</p>
         </div>
         <div class="result-text">
-          <a class="result-text-link "href="#">
-            <h3 class="result-text-title">The Best Ski Resorts in the U.S. and Canada: Readers&apos; Choice ...</h3>
+          <a class="result-text-link bluelink-text"href="#">
+            The Best Ski Resorts in the U.S. and Canada: Readers&apos; Choice ...
           </a>
           <cite class="result-text-url">www.google.com/jasons_site/happening_things/making_this_as_long_as_I_can</cite>
-          <p class="result-text-intro">Nov 14, 2016 - Cond&eacute; Nast Traveler* readers rate their favorite ski resorts in North America&mdash;the best trails, lifts and lines, and spots for apr&egrave;s-ski.</p>
+          <p class="result-text-desc">Nov 14, 2016 - Cond&eacute; Nast Traveler* readers rate their favorite ski resorts in North America&mdash;the best trails, lifts and lines, and spots for apr&egrave;s-ski.</p>
         </div>
       </div>
 
+      <!-- Empty Template for text search results
+      <div class="result-text">
+        <a class="result-text-link bluelink-text"href="#">
+
+        </a>
+        <cite class="result-text-url"></cite>
+        <p class="grey-text"></p>
+      </div>
+      End of Template -->
 
 
-
-
-      <div class="">
-        <div class="related-left-col">
-          <p>Related links left column</p>
+      <div class="related-searches-container bluelink-text">
+        <h2 class="related-searches-title black-text">Searches related to Best Ski Resorts in US</h2>
+        <!-- Left Block -->
+        <div class="related-searches-block">
+          <a class="related-searches-link"><b>top</b> ski resorts in the <b>world</b></a>
+          <a class="related-searches-link">ski <b>magazine</b> best resorts <b>2017</b></a>
+          <a class="related-searches-link">best ski resorts <b>east coast</b></a>
+          <a class="related-searches-link">ski <b>magazine resort rankings 2017</b></a>
         </div>
-        <div class="related-right-col">
-          <p>Related links right column</p>
+        <!-- Right Block -->
+        <div class="related-searches-block">
+          <a class="related-searches-link">ski resorts <b>usa map</b></a>
+          <a class="related-searches-link">best ski resorts <b>for beginners</b></a>
+          <a class="related-searches-link"><b>places to go skiing</b> in <b>usa</b></a>
+          <a class="related-searches-link"><b>top 20</b> ski resorts in <b>north america</b></a>
         </div>
       </div>
+
       <div class="">
         <p>Colored Google quick-link page design</p>
       </div>

@@ -1,12 +1,39 @@
 
 * {
-  border: 1px solid rgba(0,153,0,0.3);
+  /*border: 1px solid rgba(0,153,0,0.3);*/
 }
 
 html, body {
-  font-size: 12px;
-  font-family: Arial, sans-serif;
+  font-size: 13px;
+  font-family: Roboto, Arial, sans-serif;
   min-width: 1000px;
+}
+b {
+  font-weight: bolder;     /* for search parameters matched in "related searches" */
+}
+em {                       /* for search parameters matched in "text search results" */
+  color: rgb(106, 106, 106);
+  font-weight: bold;
+}
+
+
+/*
+ *  Utility selectors for use throughout
+ */
+
+.grey-text {
+  color: rgb(120, 120, 120);
+}
+.black-text {
+  color: rgb(0, 0, 0);
+}
+.bluelink-text {
+  color: rgb(26, 13, 171);
+}
+.shadow-border {
+  border: 1px solid rgb(210, 210, 210);
+  box-shadow: 0 1px 2px rgb(210, 210, 210);
+  border-radius: 2px;
 }
 
 
@@ -14,32 +41,26 @@ html, body {
  *  main header
  */
 
-.grey-shadowed-border {
-  border: 1px solid rgb(120, 120, 120);
-  box-shadow: 0px 1px 2px rgb(120, 120, 120);
-}
-
 .header-main {
-  padding: 20px 0 20px;
+  padding: 20px 0 25px;
 }
 .header-link {
-    text-decoration-line: none;
     display: inline-block;
     vertical-align: middle;
 }
 .header-link-logo {             /*extends .header-link */
   position: absolute;
+  margin: 5px 0 0 10px;
   }
 .header-link-icon-searchbox {   /*extends .header-link */
-  margin-left: 3px;
+  margin-left: 10px;
 }
 .header-link-icon-user {        /*extends .header-link */
-  margin-right: 15px;
+  margin-right: 20px;
 }
-
 .header-icon {
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   display: block;
 }
 .header-google-logo {
@@ -47,18 +68,16 @@ html, body {
 }
 .header-search-container {
   display: inline-block;
-  width: 600px;
-  height: 28px;         /* must match line-height */
-  line-height: 28px;    /* controls vertical-align of imput and search icons */
-  padding: 3px;
-  margin-left: 130px;
-  /*border: 1px solid rgb(120, 120, 120);
-  box-shadow: 1px 1px 1px rgb(120, 120, 120);*/
+  width: 620px;
+  height: 32px;         /* must match line-height */
+  line-height: 34px;    /* controls vertical-align of imput and search icons */
+  padding: 6px;
+  margin-left: 150px;
 }
 .header-search-input {
   display: inline-block;
   padding: 4px;
-  font-size: 14px;
+  font-size: 16px;
   width: 536px;
   /*border: 0;*/
   vertical-align: middle;
@@ -74,7 +93,6 @@ html, body {
   width: 30px;
   height: 30px;
   line-height: 30px;
-  font-family: Arial, sans-serif;
   font-size: 22px;
   color: white;
   vertical-align: middle;
@@ -86,22 +104,20 @@ html, body {
  */
 
  .nav-container {
-   padding-bottom: 20px;
+   padding-bottom: 30px;
  }
 .nav-alt-searches {
-  margin-left: 130px;
+  margin-left: 150px;
   display: inline-block;
 }
-.nav-utilities {
+.nav-utilities {                  /* Settings and Tools */
   margin-left: 100px;
   display: inline-block;
 }
 .nav-link {
   text-decoration-line: none;
-  font-size: 12px;
-  color: rgb(120, 120, 120);
-  padding: 0 5px;
-  margin: 0 5px;
+  padding: 0 8px;
+  margin: 0 7px;
 }
 
 
@@ -110,19 +126,10 @@ html, body {
  */
 
 .search-summary-container {
-  font-size: 14px;
-  font-weight: bold;
-  color: rgb(120, 120, 120);
-  padding: 5px 0 5px 130px;
+  padding: 5px 0 10px 165px;    /* extra left offset to match nav-link bar above */
 }
-.search-summary-link {
-  text-decoration-line: none;
-  font-size: 14px;
-  font-weight: bold;
-  color: rgb(120, 120, 120);
-}
-.search-summary-dark-font {
-  color: rgb(0, 0, 0);
+.search-summary-text {
+  font-size: 18px;
 }
 
 
@@ -131,11 +138,11 @@ html, body {
   */
 
 .results-pics-container {
-  padding: 5px 0 30px 130px;
-  border-bottom: 1px solid rgb(120, 120, 120);
+  padding: 5px 0 10px 150px;
+  border-bottom: 1px solid rgb(210, 210, 210);
+  margin-bottom: 30px;
 }
 .result-pic-link {
-  text-decoration-line: none;
   display: inline-block;
   vertical-align: top;
   margin-right: 4px;
@@ -143,9 +150,7 @@ html, body {
 }
 .result-pic-frame {
   width: 120px;
-  height: 160px;           /*Controls height of entire link nav bar*/
-  /*border: 1px solid rgb(120, 120, 120);
-  box-shadow: 1px 1px 1px rgb(120, 120, 120);*/
+  height: 200px;           /*Controls height of entire link nav bar*/
 
 }
 .result-pic-image {
@@ -154,8 +159,6 @@ html, body {
   display: block;
 }
 .result-pic-title {
-  color: rgb(0, 0, 0);
-  font-size: 12px;
   padding: 5px 15px;
 }
 
@@ -164,30 +167,64 @@ html, body {
  *  Text Results
  */
 
- .results-text-container {
-   padding: 5px 0 30px 130px;
+ .result-text-container {
+   padding: 5px 0 25px 160px;
    width: 600px;
  }
- .result-text {               /* element type: Section*/
+ .result-text {       /* container for each text search result */
    width: 100%;
    margin-bottom: 20px;
  }
  .result-text-link {
-   text-decoration-line: none;
+   font-size: 18px;
    display: block;
- }
- .result-text-title {
-   font-size: 14px;
-   color: rgb(55, 13, 222);
-   /*padding-bottom: 10px*/
+   margin-bottom: 6px;
  }
 .result-text-url {
-  color: rgb(0, 145, 32);
-  /*padding-bottom: 10px*/
+  font-size: 14px;
+  color: rgb(3, 102, 24);
+  display: block;
+  margin-bottom: 3px;
 }
-.result-text-intro {
-  /*padding-bottom: 10px*/
+.result-text-desc {
+  line-height: 1.4;
+  color: rgb(90, 90, 90);
 }
-.result-text-match-markup {
-  font-weight: bold;
+
+
+/*
+ *  Related Searches Links
+ */
+
+.related-searches-container {
+  padding: 0 0 30px 160px;
+
 }
+.related-searches-block {     /* left and right containers*/
+  width: 250px;
+  display: inline-block;
+}
+.related-searches-title {
+  font-size: 18px;
+  padding-bottom: 20px
+}
+.related-searches-link {
+  font-size: 14px;
+  line-height: 20px;
+  padding: 3px 0 3px 0;
+  display: block;
+}
+
+
+/*
+ *  Google Logo Page Link
+ */
+
+dd
+
+
+/*
+ *  Footer
+ */
+
+something
